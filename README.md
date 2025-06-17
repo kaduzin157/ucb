@@ -1,4 +1,7 @@
-#include <stdio.h> #include <stdlib.h> #include <string.h> #include <locale.h>
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <string.h> 
+#include <locale.h>
 
 #define MAX_ITEMS 50 #define MAX_CART_ITEMS 50
 
