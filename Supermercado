@@ -1,0 +1,51 @@
+Desenvolvimento do Sistema
+O sistema foi desenvolvido em C e simula um mercado virtual, permitindo a gestão de um catálogo de itens e um carrinho de compras. A estrutura é organizada em diferentes partes:
+
+Estruturas de Dados:
+
+Item: Representa um item no catálogo, contendo um identificador (id), descrição (descricao) e valor (valor).
+ItemCarrinho: Representa um item no carrinho de compras, que inclui um Item e a quantidade (qtd) desse item.
+Variáveis Globais:
+
+catalogo: Array que armazena até 50 itens.
+carrinhoCompras: Array que armazena até 50 itens no carrinho.
+Contadores (totalItens e totalCarrinho) para rastrear o número de itens no catálogo e no carrinho.
+Funcionalidades Implementadas:
+
+Adicionar Item: Permite ao usuário cadastrar novos itens no catálogo.
+Listar Itens: Exibe todos os itens cadastrados no catálogo.
+Adicionar ao Carrinho: O usuário pode adicionar itens ao carrinho, especificando a quantidade.
+Remover do Carrinho: Remove itens do carrinho.
+Visualizar Carrinho: Mostra todos os itens no carrinho com detalhes sobre a quantidade e o valor total.
+Finalizar Compra: Calcula e exibe o total da compra e limpa o carrinho.
+Menu Interativo: Apresenta um menu para o usuário interagir com o sistema.
+Instruções para Compilar e Executar
+Para compilar e executar o sistema, siga as instruções abaixo:
+
+Pré-requisitos:
+
+Ter um compilador C instalado (por exemplo, GCC).
+Ter um terminal ou linha de comando acessível.
+Compilação:
+
+Salve o código em um arquivo chamado mercado_virtual.c.
+Abra um terminal e navegue até o diretório onde o arquivo foi salvo.
+Compile o código usando o seguinte comando:
+bash
+
+gcc -o mercado_virtual mercado_virtual.c
+Execução:
+
+Após a compilação bem-sucedida, execute o programa com:
+bash
+
+./mercado_virtual
+Funcionalidades Detalhadas
+Cadastrar Item: Solicita a descrição e o valor do item, criando um novo item no catálogo.
+Listar Itens: Apresenta todos os itens cadastrados, exibindo detalhes como ID, descrição e valor.
+Adicionar Item ao Carrinho: Permite ao usuário escolher um item pelo ID e adicionar uma quantidade ao carrinho.
+Remover Item do Carrinho: Permite a remoção de um item do carrinho baseado em seu ID.
+Visualizar Carrinho: Exibe os itens no carrinho, suas quantidades, valores unitários e o subtotal de cada item.
+Finalizar Compra: Calcula o total da compra e exibe um resumo, limpando o carrinho após a finalização.
+Considerações Finais
+Esse sistema é um exemplo básico de manipulação de dados em C, utilizando estruturas, arrays e funções. Para aprimorar, poderia-se considerar a implementação de funcionalidades adicionais, como persistência de dados (armazenamento em arquivos) ou uma interface gráfica.
